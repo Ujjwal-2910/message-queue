@@ -1,0 +1,13 @@
+# Message queue project
+- This a messsage queue project.
+- To run this project on your system, clone this to your system.
+- Type 'npm init' in the terminal and hit enter to get 'package.json'.
+- The package used in this project is 'bullmq'. To install this package type 'npm i bullmq' in your terminal.
+- We have used docker in this project so make sure to install the docker.
+- We have used redis server and it uses 6379 port.
+- Open "Command Prompt" and move to your project directory and type 'docker run -itd -p 6379:6379 redis' it will install redis server for you.
+- Then type 'node worker.js' to pass the message.
+- Open another "Command Prompt" and move to the project directory and type 'node producer.js' to see the message are coming in the queue.
+- If you do 'ctrl + c' in the work.js part and again type 'node worker.js', then it will add another message
+- In producer.js part you can see the message will get add
+- If you check in you 'medis' software, the message will be added to your redis server
